@@ -6,6 +6,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -19,11 +20,11 @@ public class MainActivity extends ActionBarActivity {
 
 
     public void buttonOnClick(View v) {
-        Button button=(Button) v;
-        button.setText("Приветт !!!");
+        Button button = (Button) v;
+        button.setText("Приветтт !!!");
 
-//        TextView textView2=(TextView) v;
-//        textView2.setText("Привет !!!");
+        TextView myTextView = (TextView) findViewById(R.id.textView);
+        myTextView.setText("Здрасте");
     }
 
 
